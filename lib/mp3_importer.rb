@@ -14,9 +14,7 @@ class MP3Importer
 	end
 
 	def import
-		self.files.each do |filename|
-			Song.new_by_filename(MP3Importer.remove_extension(filename))
-		end
+		self.files.each { |filename| Song.new_by_filename(MP3Importer.remove_extension(filename)) }
 	end
 
 	# Helper methods to grab clean strings from filename

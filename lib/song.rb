@@ -4,10 +4,14 @@ class Song
 
 	@@all = []
 
+	# Instance Methods **********************************************************
+
 	def initialize(name)
 		@name = name
 		@@all << self
 	end
+
+	# Class Methods **********************************************************
 
 	def self.new_by_filename(filename)
 		#Grab artist string
