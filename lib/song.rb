@@ -10,6 +10,7 @@ class Song
     song = Song.new(file_name.split(" - ")[1])
     song.artist = Artist.new(file_name.split(" - ")[0])
     song.artist.songs << song.name
+    binding.pry
     song.artist.save
     song
   end
