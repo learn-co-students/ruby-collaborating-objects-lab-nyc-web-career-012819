@@ -25,7 +25,7 @@ class Artist
     @@all.find do |artist|
       if artist.name != name
         new_artist = Artist.new(name)
-        @@all << new_artist
+        # @@all << new_artist
       end
     end
   end
